@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #E0E0E0;
+}
+
+.container {
+    background-color: #1e1e2f; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #E0E0E0; /* Light gray */
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    width: 70%; 
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #3f3f4f;
+    border-radius: 5px;
+    background-color: #2b2b3b; 
+    color: #E0E0E0; 
+}
+
+#taskLinkInput {
+    width: 20%; 
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #3f3f4f;
+    border-radius: 5px;
+    background-color: #2b2b3b;
+    color: #E0E0E0;
+}
+
+input::placeholder {
+    color: #A0A0A0; 
+}
+
+button {
+    width: 10%;
+    background-color: #1565C0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+button i {
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #1E88E5; 
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #2e2e3e;
+    border-left: 5px solid #1565C0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    color: #E0E0E0;
+}
+
+ul li.completed {
+    text-decoration: line-through;
+    color: #999999;
+    background-color: #42424f; 
+}
+
+ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff6347; /* Red delete button */
+    font-size: 18px;
+}
+
+ul li button:hover {
+    color: #e53e3e; /* Darker red on hover */
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.8); /* Graue, durchsichtige Box */
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none; /* Verhindert, dass das Tooltip die Mausereignisse blockiert */
+    z-index: 10;
+}
+
